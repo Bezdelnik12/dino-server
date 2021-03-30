@@ -22,7 +22,10 @@ _SQL;
     $records = [];
     $i = 0;
     if ( !$st ) ok();
-    while ($row = $st->fetch()) {
+
+    $rows = $st->fetchAll();
+
+    foreach ($rows as $row) {
         $records[$i]['id'] = $row['id'];
         $records[$i]['user_id'] = $row['user_id'];
 

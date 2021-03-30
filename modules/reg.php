@@ -13,21 +13,18 @@
 if ( $method != 'POST' ) allowed();
 
 $login = isset($_POST['login']) ? trim(htmlspecialchars($_POST['login'])): null;
-$email = isset($_POST['email']) ? trim(htmlspecialchars($_POST['email'])): null;
 $password = isset($_POST['password']) ? trim(htmlspecialchars($_POST['password'])): null;
 
-if (!$login || !$email || !$password) error(403, 'Invalid params');
+if (!$login || !$password) error(403, 'Invalid params');
 
 $password = md5($password);
 
 $sql = <<<_SQL
 INSERT INTO `users`(
     `login`,
-    `email`,
     `password`
 ) VALUES (
     '{$login}',
-    '{$email}',
     '{$password}'
 );
 _SQL;

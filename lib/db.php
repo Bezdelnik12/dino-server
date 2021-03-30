@@ -16,7 +16,6 @@ try {
 CREATE TABLE "users" (
 	"id"	INTEGER,
 	"login"	TEXT UNIQUE,
-	"email"	TEXT UNIQUE,
 	"password"	TEXT,
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
