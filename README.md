@@ -1,4 +1,4 @@
-# Сервер для таблицы рекордов Rido Runer
+# Сервер для таблицы рекордов Dino Runner
 Ничего особого. Просто рейтинг. БД SQLite
 ## Авторы
 * [Sergej Rufov](https://vk.com/rufow)
