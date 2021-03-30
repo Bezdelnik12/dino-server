@@ -39,7 +39,7 @@ function getFormData($method) {
  * @param array $data Тело ответа
  * @return void
  */
-function ok($data)
+function ok($data = array())
 {
     response(200, [
         'status' => true,
@@ -53,7 +53,7 @@ function ok($data)
  * @param array $data Тело ответа
  * @return void
  */
-function create($data)
+function create($data = array())
 {
     response(201, [
         'status' => true,

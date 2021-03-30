@@ -26,7 +26,7 @@ _SQL
 CREATE TABLE "records" (
 	"id"	INTEGER,
 	"user_id"	INTEGER,
-	"count"	INTEGER,
+	"record_count"	INTEGER,
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 _SQL
