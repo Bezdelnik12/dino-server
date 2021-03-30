@@ -25,6 +25,16 @@ _SQL;
     while ($row = $st->fetch()) {
         $records[$i]['id'] = $row['id'];
         $records[$i]['user_id'] = $row['user_id'];
+
+        $sql = <<<_SQL
+SELECT * FROM users WHERE id = '{$records[$i]['user_id']}'
+_SQL;
+
+        $st = $pdo->query($sql);
+        $user = $st->fetch();
+
+        $records[$i]['login'] = $user['login'];
+
         $records[$i]['record_count'] = $row['record_count'];
         $i++;
     }
