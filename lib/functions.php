@@ -60,3 +60,11 @@ function response($code, $data) {
     echo json_encode($data);
     exit();
 }
+
+function get_token($id) {
+    $time = time() + 3600;
+    return base64_encode(json_encode(array(
+        't' => $time,
+        'id' => $id
+    )));
+}
