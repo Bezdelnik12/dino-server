@@ -1,4 +1,12 @@
 <?php
+/**
+ * Точка входа
+ *
+ * @author Sergej Rufov <rufov@freeun.ru>
+ * @author Bezdelnik12 <nik.shmelev.24@gmail.com>
+ * @license https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ */
+
 error_reporting(E_ALL);
 ini_set('display_errors', true);
 ini_set('display_startup_errors', true);

@@ -1,4 +1,12 @@
 <?php
+/**
+ * Работа с БД
+ *
+ * @author Sergej Rufov <rufov@freeun.ru>
+ * @author Bezdelnik12 <nik.shmelev.24@gmail.com>
+ * @license https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ */
+
 try {
     $pdo = new PDO("sqlite:" . PATH_TO_SQLITE_FILE);
     if (!filesize(PATH_TO_SQLITE_FILE))
